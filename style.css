@@ -1,0 +1,163 @@
+*{  
+     margin: 0px;
+     font-family: monospace;
+     background-image: url(images/floral.png);
+     
+}
+/*headre n nav*/
+#marque{
+    background-color: crimson;
+    border-bottom-style: solid;
+    border-bottom-color: white; 
+    height: 40px;
+    color: white;
+    text-align: justify;
+    size: 10px;
+      
+}
+
+header{
+  
+    display: flex;
+    justify-content: space-between;
+    background-color: #4c4c4c;
+    height: 60px;
+
+}
+img{
+  padding: 10px;
+  height: 40px;
+  width:100px;
+
+}
+a{
+    
+    color: darkgrey;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+nav{
+      
+    display: inline-block;
+    justify-content: space-around;
+    size: 20px ;
+    font-family:'Courier New', Courier, monospace ;
+     padding: 20px;
+     font-weight: bold;
+  
+}
+/*tech karo about*/
+#circle{
+    height: 270px;
+    background-color: pink;
+    color: brown;
+    
+
+
+}
+h1{   
+
+    text-align: center;
+    padding: 30px;
+    font-size: 3em;
+    font-weight: bold;
+    
+    
+}
+#circle div{
+
+   display: inline-block;
+    border-top: brown solid;
+    border-bottom: brown solid;
+    width: 80%;
+    /*position: absolute; */  
+    margin-left: 100px;
+   
+
+    
+}
+#circle p{
+         
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold 
+}
+
+button{
+    display: block;
+    background-color: brown;
+    color: pink;
+    border: none;
+    height: 50px;
+    width: 200px;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content: baseline;
+    margin-left: 570px;
+    margin-top: 20px;
+   
+    font-weight: bold;
+}
+
+              /*services*/
+#services{
+    background-color: wheat;
+    display: flex;
+}
+
+h2{
+    text-align: center;
+ /*   padding: 30px;
+    font-size: 3em;
+    font-weight: bold;
+ 
+   display:inline-block;
+     border: solid black;
+}
+/*
+#services div{
+
+  display: inline-block;
+
+}
+*/
+}
+#services img{
+    height: 100px;
+    width: 30%;
+    justify-content: space-around;
+
+justify-content: center;
+margin-left: 135px;
+
+
+}
+
+h3{
+
+    font-size: 20px;
+}
+figcaption{
+          font-weight: bold;
+          font-family:'Courier New', Courier, monospace ;
+          size: 5px;
+          text-align: center;
+          padding: 18px;
+
+
+
+}
+
+/* portfilio */
+figure > img{
+    height: 300px;
+    width: 500px;
+
+
+
+}
+#portfolio div{
+    display: inline-block;
+}
