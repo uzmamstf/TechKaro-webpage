@@ -1,2 +1,2 @@
 # TechKaro-webpage
-## WIP 
+## Task Completed 
