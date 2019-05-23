@@ -1,7 +1,7 @@
 *{  
      margin: 0px;
      font-family: monospace;
-     background-image: url(images/floral.png);
+  
      
 }
 /*headre n nav*/
@@ -9,11 +9,11 @@
     background-color: crimson;
     border-bottom-style: solid;
     border-bottom-color: white; 
-    height: 40px;
+    height: auto;
     color: white;
     text-align: justify;
     size: 10px;
-      
+    padding:5px;
 }
 
 header{
@@ -38,6 +38,9 @@ a{
     padding: 5px;
     
 }
+a:hover{
+  color: darkgoldenrod;
+}
 nav{
       
     display: inline-block;
@@ -50,10 +53,11 @@ nav{
 }
 /*tech karo about*/
 #circle{
-    height: 270px;
+      height: auto;
     background-color: pink;
     color: brown;
-    
+    padding-bottom: 3em;
+    justify-content: center;
 
 
 }
@@ -63,18 +67,19 @@ h1{
     padding: 30px;
     font-size: 3em;
     font-weight: bold;
-    
-    
+    font-family: monospace;
+    font-weight: bold;
+       
 }
-#circle div{
+#circle div p{
 
    display: inline-block;
     border-top: brown solid;
     border-bottom: brown solid;
-    width: 80%;
-    /*position: absolute; */  
-    margin-left: 100px;
-   
+ display: flex;
+ justify-content: center;
+ margin-left: 4em;
+ margin-right: 4em;
 
     
 }
@@ -84,80 +89,255 @@ h1{
     font-size: 2em;
     font-weight: bold 
 }
+.btn
+{
+display: flex;
+justify-content: center;
+}
 
 button{
     display: block;
     background-color: brown;
     color: pink;
     border: none;
-    height: 50px;
-    width: 200px;
+  
     font-size: 1.5em;
     font-weight: bold;
-    justify-content: baseline;
-    margin-left: 570px;
     margin-top: 20px;
-   
+   padding: 1em 2em 1em 2em;
     font-weight: bold;
 }
-
-              /*services*/
-#services{
-    background-color: wheat;
-    display: flex;
+button:hover{
+  color:brown;
+  background-color: pink;
+  border: 1px solid brown;
 }
 
-h2{
-    text-align: center;
- /*   padding: 30px;
-    font-size: 3em;
-    font-weight: bold;
- 
-   display:inline-block;
-     border: solid black;
-}
-/*
-#services div{
-
-  display: inline-block;
-
-}
-*/
-}
-#services img{
-    height: 100px;
-    width: 30%;
-    justify-content: space-around;
-
+.container{
+  min-height: 50px;
+ margin: 70px auto 0;
+flex-direction: row;
+flex-wrap: wrap;
 justify-content: center;
-margin-left: 135px;
+text-align: center;
+}
+.container .box{
+  position: relative;
+  width: 300px;
+  height: 280px;
+  /* margin: 10px; */
+  margin-top: 2px;
+  display: inline-block;
+  justify-content: space-around;
+}
+              /*services*/
+
+
+
+              #services {
+                margin-top: 0;
+                height: auto;
+                background: url(images/floral.png);
+                background-color: #EFECE7;
+                padding-bottom: 2em;
+              }
+            
+            figure .box i .fab{
+                font-size: 4em;
+            }
+            .fab {
+                font-family: "Font Awesome 5 Brands";
+                font-size: 5em;
+            }
+
+                h2{
+                text-align: center;
+                padding: 1em;
+                font-family: forte;
+                font-size: 2em;
+                
+            }
+            h4{
+
+                font-size: 2em;
+                font-weight: bold;
+
+            }
+            .fab:hover{
+                color: lightcoral;
+                transition: ease-in 0.5s;
+            }
+            .box p{
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+
+
+
+
+/* Portfolio */
+
+.para{
+
+  border-bottom: solid brown;
+  border-top: solid brown;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 8px 30px 8px 50px;
+  
+  display: flex;
+  justify-content: center;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+/* .flex-container{
+    text-align: center;
+}
+
+.flex-container > div {
+    width: auto;
+  }
+  .flex-container .heading,.para{
+    margin-right: 8em;
+    margin-left: 8em;
+  } */
+  #portfolio {
+    margin-top: 0;
+    height: auto;
+    background: url(images/floral.png);
+    background-color: #D6C6AC;
+  }
+  .container{
+    min-height: 50px;
+   margin: 70px auto 0;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+.container .box{
+ position: relative;
+ width: 300px;
+ height: 280px;
+ margin: 10px;
+ display: inline-block;
+} 
+.container .box .imgbox{
+ position: relative;
+ overflow: hidden;
+ border-radius: 13px;
+}
+.container .box .imgbox img{
+ max-width: 100%;
+  transition: transform 2s;
+  width: 300px;
+ height: 273px;
+}
+/* .container .box:hover .imgbox img{
+transform: scale(1.2);
+ 
+} */
+.container .box  .details{
+ position: absolute;
+ top: 0;
+ left: 0;
+ bottom:0;
+ right: 0;
+ background: rgba(0,0,0, .8);
+  transform: scaleY(0);  
+
+ border-radius: 13px;
+}
+.container .box:hover  .details{
+   transform: scaleX(1); 
+ cursor: pointer;
 
 
 }
+.container .box  .details .content{
 
-h3{
+ position: absolute;
+ top: 50%;
+ /* transform: translateY(-50%);  */
+ padding: 15px;
+ color: white;
+ /* border: solid white 1px; */
+ top: 2em;
+ left: 3em;
 
-    font-size: 20px;
-}
-figcaption{
-          font-weight: bold;
-          font-family:'Courier New', Courier, monospace ;
-          size: 5px;
-          text-align: center;
-          padding: 18px;
-
-
-
-}
-
-/* portfilio */
-figure > img{
-    height: 300px;
-    width: 500px;
-
-
+ 
 
 }
-#portfolio div{
-    display: inline-block;
+.container .box  .details .content .fas{
+
+  border-radius: 100%;
+  border: white 1px solid;
+  
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.container .box  .details .content .fas:hover{
+
+color: black;
+background-color: white;
+
+}
+
+
+/* social icons */
+#social{
+background-image: url(images/floral.png);
+background-color: skyblue;
+ height: auto;
+ 
+ align-items: center;
+ 
+}
+#social div{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+#social i{
+   
+        border-radius: 100%;
+        border:  solid black;
+        padding:  10px; 
+        /* margin: 5px; */
+        font-size: 3em;
+        
+        
+     
+}
+    
+#social i:hover{
+        background-color:black;
+        color: white;
+        transition: ease 1s;
+    } 
+     
+footer{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    height: auto;
+    padding: 10px;
+    bottom: 1px;
+
+
+
+
+}
+footer:hover .fa-heart{
+ color: red;
+ transition: ease-in 1s;
+
 }
